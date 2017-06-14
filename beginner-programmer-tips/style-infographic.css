@@ -1,0 +1,68 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    background-color: cornsilk;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fc {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50vw;
+    margin: 10vh auto;
+}
+
+main {
+    background-color: black;
+    color: white;
+}
+
+header {
+    font-family: 'Roboto Slab', serif;
+}
+
+.title-five {
+    font-size: 8em;
+    position: relative;
+    float: left;
+    padding: 0px 12px 0px 5px;
+    margin: -30px 0px -30px 5px;
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 2em;
+}
+header h2 {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.tip {
+    display: inline-block;
+    margin: .5em;
+}
+.number {
+    font-size: 3em;
+    padding: 5px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: black;
+    position: relative;
+    float: left;
+    flex: 0 1 auto;
+}
+
+.text {
+    width: 85%;
+    background-color: blue;
+    margin: 3.5em auto;
+    padding: 1em 2em 1em 3em;
+    border-radius: 0px 10px 10px 0px;
+    flex: 0 3 auto;
+}
+footer {
+    background-color: turquoise;
+    color: darkslateblue;
+    padding: 1em;
+}
