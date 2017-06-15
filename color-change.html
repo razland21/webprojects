@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Color Changing Fun</title>
+    <style>
+        body {
+            background-color: turquoise;
+        }
+
+        div {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            width: 400px;
+            height: 200px;
+            background-color: blanchedalmond;
+            border: 5px solid black;
+            box-shadow: 3px 3px lightslategray;
+            border-radius: 10px;
+        }
+
+
+    </style>
+    <script>
+        function changeColor() {
+            var color = "#"
+            var options = "0123456789ABCDEF"
+
+            for (var i = 0; i < 6; i++) {
+                color += options[Math.floor(Math.random()*16)];
+            }
+
+            return color;
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = changeColor();
+        }
+
+        function changeBoxColor() {
+            var box = document.querySelector(".button-container");
+
+            box.style.backgroundColor = changeColor();
+        }
+
+        function changeAllColors() {
+            changeBackgroundColor();
+            changeBoxColor();
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <h1>Let's change random colors!</h1>
+        <button class="button" onclick="changeBackgroundColor();">Change Background Color</button>
+        <button class="button" onclick="changeBoxColor();">Change Box Color</button>
+        <button class="button" onclick="changeAllColors();">Change All Colors!</button>
+
+    </div>
+</body>
+
+</html>
