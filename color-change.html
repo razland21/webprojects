@@ -6,9 +6,13 @@
     <style>
         body {
             background-color: turquoise;
+            font-family: sans-serif;
         }
 
         div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
             position: absolute;
             margin: auto;
             top: 0;
@@ -16,14 +20,27 @@
             bottom: 0;
             left: 0;
             padding: 10px;
-            width: 400px;
-            height: 200px;
+            width: 50vw;
+            height: 50vh;
             background-color: blanchedalmond;
             border: 5px solid black;
             box-shadow: 3px 3px lightslategray;
             border-radius: 10px;
         }
 
+        header {
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            text-shadow: 2px 2px lightgray;
+        }
+
+        button {
+            width: 40vw;
+            padding: 2px;
+            margin: 2px;
+        }
 
     </style>
     <script>
@@ -34,7 +51,6 @@
             for (var i = 0; i < 6; i++) {
                 color += options[Math.floor(Math.random()*16)];
             }
-
             return color;
         }
 
@@ -48,9 +64,16 @@
             box.style.backgroundColor = changeColor();
         }
 
+        function changeTextColor() {
+            var text = document.querySelector(".box-text");
+
+            text.style.color = changeColor();
+        }
+
         function changeAllColors() {
             changeBackgroundColor();
             changeBoxColor();
+            changeTextColor();
         }
 
     </script>
@@ -59,9 +82,12 @@
 <body>
 
     <div class="button-container">
-        <h1>Let's change random colors!</h1>
+        <header>
+            <h1 class="box-text">Let's change random colors!</h1>
+        </header>
         <button class="button" onclick="changeBackgroundColor();">Change Background Color</button>
         <button class="button" onclick="changeBoxColor();">Change Box Color</button>
+        <button class="button" onclick="changeTextColor();">Change Text Color</button>
         <button class="button" onclick="changeAllColors();">Change All Colors!</button>
 
     </div>
