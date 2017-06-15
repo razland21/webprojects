@@ -112,6 +112,10 @@ td {
     background-color: ghostwhite;
 }
 
+td.blog {
+    text-align: center;
+}
+
 /*footer formatting*/
 
 
