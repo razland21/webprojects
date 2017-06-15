@@ -1,5 +1,5 @@
 body, html {
-    background-color: turquoise;
+    background-color: indigo;
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -16,7 +16,7 @@ main {
     background-color: black;
     color: white;
     margin: 2vh auto;
-    width: 53vw;
+    width: 40vw;
 }
 
 header {
@@ -68,7 +68,9 @@ section {
     display: block;
     width: 40vw;
     background-color: blue;
+    color: black;
     font-size: 1.2em;
+    font-weight: bold;
     margin: 0px 0px 0px -50px;
     padding: .7em 2em .7em 3.5em;
     border-radius: 0px 10px 10px 0px;
@@ -76,15 +78,48 @@ section {
     z-index: 2;
 }
 
-.one .text{
+.one .text {
+    background-color: aquamarine;
     padding: 1.4em 2em .7em 3.5em;
 }
+
+.two .text {
+    background-color: cornflowerblue;
+}
+
+.three .text {
+    background-color: indianred;
+}
+
+.four .text {
+    background-color: goldenrod;
+}
+
+.five .text {
+    background-color: seagreen;
+}
+
+.text:hover {
+    background-color: maroon;
+    color: oldlace;
+}
+
 #footer-text {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    color: darkslateblue;
+    color: white;
     padding: .7em;
     margin: auto;
     flex: 0 1 auto;
+}
+
+
+#footer-text a, #footer-text a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-text a:hover {
+    color: mediumpurple;
 }
