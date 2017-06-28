@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    background-image: url("nature-seat.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.fc {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin: 5vw;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgba(253,253,253,0.6);
+    border-radius: 15px;
+    
+}
+
+.verse {
+    width: 100%;
+    padding: 5vw;
+}
+
+.footer {
+    width: 50vw;
+}
