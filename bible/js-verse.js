@@ -16,11 +16,11 @@ function parse_verse(my_verse) {
 }
 
 
-function get_votd() {
+function get_verse(type) {
     $.ajax({
         url: "http://labs.bible.org/api/?",
         dataType:"jsonp",
-        data: "passage=votd&type=json&callback=?",
+        data: "passage="+type+"&type=json&callback=?",
         success: function(my_verse) {
             parse_verse(my_verse);
         }
@@ -29,5 +29,14 @@ function get_votd() {
 
 
 $("document").ready(function(){
-    get_votd();
+    get_verse("votd");
+
+    $("#votd").click(function(){
+        get_verse("votd");
+    });
+
+    $("#random").click(function(){
+        get_verse("random");
+    });
 });
+
