@@ -1,3 +1,6 @@
+/**written by razland**/
+
+
 function parse_verse(my_verse, type) {
     var source = "- "
     var full_verse = ""
