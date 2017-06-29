@@ -7,26 +7,55 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(10,10,10);
 
 }
 
 .fc {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    margin: 5vw;
+    margin: 4vw;
     width: 50vw;
-    height: 70vh;
+    height: 65vh;
     background-color: rgba(253,253,253,0.6);
     border-radius: 15px;
+    border: 2px solid rgba(10,10,10,0.6);
     
 }
 
+/*verse box content formatting*/
 .verse {
+    position: absolute;
     width: 100%;
-    padding: 5vw;
 }
 
+#vtext {
+    padding: 2vw;
+}
+#vloc {
+    text-align: right;
+    padding: 0vw 2vw;
+}
+
+/*button content formatting*/
 .footer {
-    width: 50vw;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    background-color: lightcyan;
+    border: 1px solid rgba(10,10,10,1);
+    border-radius: 2px;
+    margin: 2px 5px;
+    padding: 7px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(10,10,10);
 }
