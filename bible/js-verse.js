@@ -22,7 +22,7 @@ function parse_verse(my_verse, type) {
 
 function get_verse(type) {
     $.ajax({
-        url: "http://labs.bible.org/api/?",
+        url: "https://labs.bible.org/api/?",
         dataType:"jsonp",
         data: "passage="+type+"&type=json&callback=?",
         success: function(my_verse) {
