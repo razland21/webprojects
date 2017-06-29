@@ -1,6 +1,10 @@
-function parse_verse(my_verse) {
+function parse_verse(my_verse, type) {
     var source = "- "
     var full_verse = ""
+
+    if (type=="votd") {
+        full_verse += "<h1>Verse of the Day</h1>";
+    }
 
     for(var i=0; i<my_verse.length; i++) {
         full_verse += "<p>" + my_verse[i].text + " </p>";
@@ -22,7 +26,7 @@ function get_verse(type) {
         dataType:"jsonp",
         data: "passage="+type+"&type=json&callback=?",
         success: function(my_verse) {
-            parse_verse(my_verse);
+            parse_verse(my_verse, type);
         }
     });
 }

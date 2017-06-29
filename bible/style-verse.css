@@ -14,13 +14,11 @@ body {
 }
 
 .fc {
-    position: relative;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     margin: 4vw;
     width: 50vw;
-    height: 65vh;
     background-color: rgba(253,253,253,0.6);
     border-radius: 15px;
     border: 2px solid rgba(10,10,10,0.6);
@@ -29,8 +27,11 @@ body {
 
 /*verse box content formatting*/
 .verse {
-    position: absolute;
     width: 100%;
+}
+
+.verse a {
+    display: none;
 }
 
 #vtext {
@@ -43,8 +44,7 @@ body {
 
 /*button content formatting*/
 .footer {
-    position: absolute;
-    bottom: 1rem;
+    margin: 2vw;
     width: 100%;
     text-align: center;
 }
