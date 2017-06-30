@@ -53,7 +53,7 @@ body {
 }
 
 /*button content formatting*/
-.footer {
+.buttons {
     margin: 2vw;
     width: 100%;
     text-align: center;
@@ -74,4 +74,30 @@ body {
 .button:hover {
     background-color: rgb(1, 44, 112);
     color: whitesmoke;
+}
+
+
+
+/*footer*/
+.footer {
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background-color: rgba(200,200,200,0.8);
+    border: 2px solid rgba(10,10,10,0.6);
+    border-radius: 15px 0px 15px 0px;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.footer a:hover {
+    color: lightcyan;
 }
